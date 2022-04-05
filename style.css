@@ -1,0 +1,19 @@
+.container {
+        display: flex;
+}
+
+.col {
+        flex: 1;
+}
+
+.conversation {
+        font-size: smaller;
+}
+
+.conversation li:nth-child(even) {
+        color: green;
+}
+
+.conversation li:nth-child(odd) {
+        color: blue;
+}

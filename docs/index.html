@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
   <style>
-    .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
-    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -21,7 +18,8 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/beige.css" id="theme">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="reveal">
@@ -36,6 +34,28 @@
 <section id="why" class="title-slide slide level1">
 <h1>Why?</h1>
 
+</section>
+<section id="it-works-on-my-machine" class="slide level2">
+<h2>It works on my machine…</h2>
+<div class="conversation">
+<ul>
+<li class="fragment">Hi! Interesting results you have. Could I try out your code?</li>
+<li class="fragment">Sure, <del>just drop me an email!</del> check out my Github page!</li>
+<li class="fragment">I’m having problems compiling your program.</li>
+<li class="fragment">Oh, what version of GFortran are you running?</li>
+</ul>
+</div>
+</section>
+<section id="a-longer-conversation" class="slide level2">
+<h2>A longer conversation</h2>
+<div class="conversation">
+<ul>
+<li class="fragment">Now its complaining about a library…</li>
+<li class="fragment">Oh ya, I’m running a patched version of that library.</li>
+<li class="fragment">Eeerm …</li>
+<li class="fragment">Let me send you my hard drive!</li>
+</ul>
+</div>
 </section>
 <section id="question" class="slide level2">
 <h2>Question</h2>
@@ -64,28 +84,36 @@
 <p>How did your struggles impact the quality of your work?</p>
 </section></section>
 <section>
-<section id="inception-levels-of-the-virtual"
-class="title-slide slide level1">
+<section id="inception-levels-of-the-virtual" class="title-slide slide level1">
 <h1>Inception: levels of the virtual</h1>
 
 </section>
 <section id="what-is-a-computer-physically" class="slide level2">
 <h2>What is a computer, physically?</h2>
+<div class="container">
+<div class="col">
 <ul>
 <li>CPU</li>
 <li>Memory</li>
 <li>Disk</li>
 </ul>
+</div>
+<div class="col">
+<p><img data-src="fig/computer_inside.jpg" /></p>
+</div>
+</div>
 </section>
 <section id="and-what-else" class="slide level2">
 <h2>And what else?</h2>
 <ul>
-<li>Software:
+<li><p>Software:</p>
+<div>
 <ul>
-<li>Kernel</li>
-<li>Libraries</li>
-<li>Executables</li>
-</ul></li>
+<li class="fragment">Kernel</li>
+<li class="fragment">Libraries</li>
+<li class="fragment">Executables</li>
+</ul>
+</div></li>
 </ul>
 </section>
 <section id="can-we-change-the-kernel" class="slide level2">
@@ -163,7 +191,7 @@ class="title-slide slide level1">
 
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide
-        hash: true,
+        hash: false,
 
         // Start with 1 for the hash rather than 0
         hashOneBasedIndex: false,
