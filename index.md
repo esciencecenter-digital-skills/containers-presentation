@@ -46,6 +46,7 @@ How did your struggles impact the quality of your work?
 - CPU
 - Memory
 - Disk
+- Network
 :::
 :::col
 ![](fig/computer_inside.jpg)
@@ -61,6 +62,8 @@ How did your struggles impact the quality of your work?
   - Executables
   :::
 
+## What does it take to run a single line of Python?
+
 ## Can we change the Kernel?
 - Swap out the hard drive
 - Dual boot
@@ -69,6 +72,7 @@ How did your struggles impact the quality of your work?
 ## Change libraries
 - Chroot
 - Static linking
+- NixOS, Guix (both Linux based)
 - Containers
 
 # Containers and Images
